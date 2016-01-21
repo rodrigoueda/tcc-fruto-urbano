@@ -1,0 +1,67 @@
+body {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+#topbar {
+    position:absolute;
+    background-color: transparent;
+    width: 25em;
+    top: 0.5em;
+    left: calc(50px + 1em);
+    z-index: 1;
+}
+#map {
+    overflow: hidden;
+    height: 100vh;
+
+    #legenda {
+        background-color: rgba(0, 60, 136, 0.8);
+        max-width: 70vw;
+        position: absolute;
+        bottom: 10px;
+        z-index: 1;
+        left: 1em;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 0 0 2px 2px;
+        color: white;
+        white-space: nowrap;
+    }
+}
+#sidebar, #sidebar2 {
+    border-left: 1px solid #989898;
+    background-color: white;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    width: 25em;
+
+    transition: right 0.5s ease;
+
+    &.sidebar-hidden {
+        right: -25em;
+    }
+
+    #user-login {
+        color: white;
+        position:absolute;
+        top: 0.5em;
+        left: -6em;
+        border: 2px solid rgba(255,255,255,0.5);
+        border-radius: 0 0 2px 2px;
+        background-color: rgba(0, 60, 136, 0.8);
+        padding: 0.2em 0.6em;
+        a {
+            color: white;
+        }
+    }
+}
+
+#show-imagem {
+    position: relative;
+    width: 100%;
+}

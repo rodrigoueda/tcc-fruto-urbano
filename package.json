@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "openlayers": "~3.10.1",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "jquery": "~2.1.4",
+    "awesome-bootstrap-checkbox": "~0.3.6",
+    "datatables": "~1.10.9",
+    "sweetalert": "~1.1.0",
+    "summernote": "~0.6.16",
+    "bootstrap-toggle": "~2.2.1",
+    "bootstrap-select": "~1.7.4"
+  }
+}

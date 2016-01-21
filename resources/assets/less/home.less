@@ -1,0 +1,33 @@
+#context-menu {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 0.3em 0.5em;
+    border: 1px solid #989898;
+    &:hover {
+        background-color: #7C9AC1;
+        color: white;
+        cursor: pointer;
+    }
+    &.hidden {
+        display: none;
+    }
+}
+
+#loading-screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+    &.hidden {
+        display: none;
+    }
+    #load-content {
+        display: flex;
+        background-color: white;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}

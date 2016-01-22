@@ -14,7 +14,8 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\EncryptCookies',
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
-		'Illuminate\View\Middleware\ShareErrorsFromSession'
+		'Illuminate\View\Middleware\ShareErrorsFromSession',
+		'App\Http\Middleware\Cors'
 	];
 
 	/**
@@ -26,7 +27,8 @@ class Kernel extends HttpKernel {
 		'auth' => 'App\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
-		'token' => 'App\Http\Middleware\VerifyCsrfToken'
+		'token' => 'App\Http\Middleware\VerifyCsrfToken',
+		'cors' => 'App\Http\Middleware\Cors',
 	];
 
 }

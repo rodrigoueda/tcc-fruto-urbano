@@ -31,10 +31,11 @@ class SpatialPointController extends Controller {
 		$maxX = $request->input('maxX');
 		$maxY = $request->input('maxY');
 
+
 		if (Auth::user() !== null) {
 			$user = Auth::user()->id;
 		} else {
-			$user = 0;
+			$user = 1;
 		}
 
 		print(json_encode(Spatialpoint::getByBoundary(compact('minX', 'minY', 'maxX', 'maxY', 'user'))));
@@ -99,7 +100,9 @@ class SpatialPointController extends Controller {
 	 */
 	public function show($id)
 	{
-		$user = Auth::user()->id;
+		if (Auth::user() !== null) {
+			$user = Auth::user()->id;
+		}
 
 		$spatialPoint = Spatialpoint::findOrFail($id)->toArray();
 
